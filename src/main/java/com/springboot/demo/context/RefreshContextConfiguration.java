@@ -19,7 +19,7 @@ public class RefreshContextConfiguration {
     this.refreshEndpoint = refreshEndpoint;
   }
 
-  @Scheduled(fixedDelayString = "${context.refresh.interval:600000}", initialDelay = 60000)
+  @Scheduled(fixedDelayString = "${context.refresh.interval:600000}", initialDelay = 600000)
   public void refreshContextPeriodically() {
     log.info("Start to refresh Spring application context at {}", new Date());
     refreshEndpoint.refresh();

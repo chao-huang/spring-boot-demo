@@ -1,6 +1,5 @@
-INSERT INTO `properties`
-    (`name`, `value`)
+REPLACE INTO `properties`
+    (`id`, `name`, `value`)
 VALUES
-    ('server.port', '3000'),
-    ('spring.output.ansi.enabled', 'always'),
-    ('logging.level.sql', 'TRACE');
+    (1, 'server.port', '3000'),
+    (2, 'logging.level.sql', 'TRACE');

@@ -11,7 +11,7 @@ public class PropertiesController {
 
   @Autowired private PropertiesRepository repository;
 
-  @GetMapping("/")
+  @GetMapping("/api/properties")
   public Page<Properties> findAll() {
     return repository.findAll(PageRequest.of(0, 10));
   }
